@@ -57,7 +57,7 @@ public class RestaurantController
     }
 
     // DELETE http://localhost:2019/restaurants/restaurant/7
-    @DeleteMapping(value = "/restaurants/{restaurantid}")
+    @DeleteMapping(value = "/restaurant/{restaurantid}")
     public ResponseEntity<?> deleteRestaurantById(@PathVariable long restaurantid)
     {
         restaurantService.delete(restaurantid);
